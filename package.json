@@ -1,0 +1,33 @@
+{
+  "name": "parking-api",
+  "version": "1.0.0",
+  "description": "Parking API",
+  "main": "src/main.js",
+  "scripts": {
+    "start:dev": "node-dev --respawn src/main.js",
+    "start": "node src/main.js",
+    "test": "modern test",
+    "format": "modern format",
+    "lint": "modern lint",
+    "precommit": "modern precommit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arkgast/parking-api.git"
+  },
+  "keywords": [
+    "api",
+    "graphql-yoga",
+    "parking"
+  ],
+  "author": "Arnold Gandarillas Castillo",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/arkgast/parking-api/issues"
+  },
+  "homepage": "https://github.com/arkgast/parking-api#readme",
+  "devDependencies": {
+    "modern-node": "^2.9.0",
+    "node-dev": "^6.6.0"
+  }
+}
