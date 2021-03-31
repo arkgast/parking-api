@@ -29,5 +29,10 @@
   "devDependencies": {
     "modern-node": "^2.9.0",
     "node-dev": "^6.6.0"
+  },
+  "dependencies": {
+    "graphql-yoga": "^1.18.3",
+    "lodash": "^4.17.21",
+    "mongoose": "^5.12.2"
   }
 }
