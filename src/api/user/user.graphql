@@ -10,7 +10,6 @@ type User {
 }
 
 input UserInput {
-  id: ID!
   firstName: String!
   lastName: String!
   city: String
@@ -19,6 +18,7 @@ input UserInput {
 }
 
 input UpdateUserInput {
+  id: ID!
   firstName: String
   lastName: String
   city: String

@@ -7,12 +7,6 @@ const commonFieldAttrs = {
 
 const userSchema = new mongoose.Schema(
   {
-    id: {
-      ...commonFieldAttrs,
-      index: true,
-      unique: true,
-      required: true
-    },
     firstName: {
       ...commonFieldAttrs,
       required: true
