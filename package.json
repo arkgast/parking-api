@@ -4,7 +4,7 @@
   "description": "Parking API",
   "main": "src/main.js",
   "scripts": {
-    "build": "docker-compose build",
+    "build:docker-images": "docker-compose build",
     "start:services": "docker-compose up api mongo",
     "start:dev": "node-dev --respawn src/main.js",
     "start": "node src/main.js",

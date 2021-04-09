@@ -6,10 +6,17 @@ services:
     container_name: parking-api
     ports:
       - 8000:8000
-    environment:
-      PORT: 8000
     volumes:
       - .:/usr/src/app
+    environment:
+      PORT: 8000
+    depends_on:
+      - mongo
+    deploy:
+      resources:
+        limits:
+          cpus: 0.5
+          memory: '128M'
 
   mongo:
     container_name: mongodb
@@ -20,3 +27,8 @@ services:
     environment:
       MONGO_INITDB_ROOT_USERNAME: admin
       MONGO_INITDB_ROOT_PASSWORD: admin
+    deploy:
+      resources:
+        limits:
+          cpus: 0.5
+          memory: '256M'
