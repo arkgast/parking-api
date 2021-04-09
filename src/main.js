@@ -4,7 +4,7 @@ const gqlServerConfig = require('./api')
 require('./db')()
 
 const serverOptions = {
-  port: 8000,
+  port: process.env.PORT,
   endpoint: '/graphql',
   playground: '/docs',
   tracing: true,

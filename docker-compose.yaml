@@ -1,6 +1,16 @@
 version: '3.1'
 
 services:
+  api:
+    build: .
+    container_name: parking-api
+    ports:
+      - 8000:8000
+    environment:
+      PORT: 8000
+    volumes:
+      - .:/usr/src/app
+
   mongo:
     container_name: mongodb
     image: mongo
